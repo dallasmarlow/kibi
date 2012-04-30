@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name     = 'kibi'
-  gem.version  = '0.0.1'
+  gem.version  = '0.0.2'
   gem.authors  = ['dallas marlow']
   gem.email    = ['dallasmarlow@gmail.com']
   gem.summary  = 'byte units'
