@@ -1,4 +1,5 @@
 require 'units'
+require 'pathname'
 
 module Kibi
   class << self
@@ -23,5 +24,12 @@ module Kibi
       end
     end
 
+    def humanize_file_size path
+      p = Pathname.new File.expand_path(path)
+      raise "File #{path} does not exist" unless p.exist?
+      raise "Path must be a file (#{path} is a directory)" if p.directory?
+
+      humanize p.size
+    end
   end
 end
