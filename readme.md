@@ -1,7 +1,5 @@
 ```ruby
 
-ruby-1.9.3-p0 :004 > require 'pathname'
- => true 
 ruby-1.9.3-p0 :001 > require 'kibi'
  => true 
 ruby-1.9.3-p0 :005 > file = Pathname.new 'large_file.tgz'
